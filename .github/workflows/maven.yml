@@ -24,6 +24,9 @@ jobs:
       with:
         java-version: 11
         maven-version: 3.6.3
+    - name: Install pdflatex
+      run: |
+        apt-get install texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
     
     - name: Build with Maven
       run: mvn -B package --file pom.xml
