@@ -5,8 +5,8 @@ import junit.framework.TestSuite;
 import moa.classifiers.Classifier;
 import moa.classifiers.AbstractMultipleClassifierTestCase;
 
-public class kNNTestCase extends AbstractMultipleClassifierTestCase {
-    public kNNTestCase(String name) {
+public class kNNTest extends AbstractMultipleClassifierTestCase {
+    public kNNTest(String name) {
         super(name);
         this.setNumberTests(1);
     }
@@ -17,7 +17,7 @@ public class kNNTestCase extends AbstractMultipleClassifierTestCase {
         };
     }
     public static Test suite() {
-        return new TestSuite(kNNTestCase.class);
+        return new TestSuite(kNNTest.class);
     }
     public static void main(String[] args) {
         runTest(suite());
